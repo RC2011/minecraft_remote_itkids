@@ -9,11 +9,7 @@ import param_MCJE as param
 from param_MCJE import PLAYER_ORIGIN as po
 
 mc = Minecraft.create(address=param.ADRS_MCR, port=param.PORT_MCR)
-result = mc.setPlayer(param.PLAYER_NAME, po.x, po.y, po.z)
-if ("Error" in result):
-    sys.exit(result)
-else:
-    print(result)
+
 
 LCD_0 = (0, 1, 1, 1, 0,
          1, 0, 0, 0, 1,
@@ -136,14 +132,14 @@ class LCD_font():
         self.COLOR_ON = COLOR_ON
         self.COLOR_OFF = COLOR_OFF
 
-    def init_row(self, X_ORG=190, Y_ORG=80, COL_INTV=6):  # 表示行の設定
+    def init_row(self, X_ORG=848, Y_ORG=528, COL_INTV=6):  # 表示行の設定
         # xy空間での7セグ表示、最上位桁の左下座標をブロック数で指定
         self.X_ORG = X_ORG * self.BLOCK_INTV
         self.Y_ORG = Y_ORG * self.BLOCK_INTV
         # 各桁のブロック間隔をブロック数で指定（インターバル）
         self.COL_INTV = COL_INTV * self.BLOCK_INTV
 
-    def update_col(self, col=0, code=9):  # ある桁にある文字を表示する関数
+    def update_col(self, col=0, code=0):  # ある桁にある文字を表示する関数
         # codeの文字をcol桁目に表示、桁は最上位桁の左から右へ進む。
         block_size = self.BLOCK_SIZE
         i = 0
@@ -159,4 +155,4 @@ class LCD_font():
                 # ドットの原点座標
                 org1 = (x0 + x * self.BLOCK_INTV, y0 + y * self.BLOCK_INTV)
                 # ドットを描く
-                mc.setblock.rect(self.screen, color, Rect(org1[0], org1[1]), param.GOLD_BLOCK, x0, y0)
+                mc.setblock.rect(color, Rect(org1[0], org1[1], param.GOLD_BLOCK))

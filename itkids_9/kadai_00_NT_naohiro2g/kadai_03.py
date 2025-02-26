@@ -16,8 +16,8 @@ else:
 
 mc.postToChat('kadai #3  seven columns')
 
-x = 5
-z = 10
+x = -21
+z = 9
 for _n in range(7):
     y = param.Y_SEA + 1
     for _i in range(10):

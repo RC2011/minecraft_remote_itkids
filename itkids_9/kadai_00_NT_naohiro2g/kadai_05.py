@@ -16,8 +16,8 @@ else:
 
 mc.postToChat('kadai #5  bar on the ground')
 
-x = 0
-z = 5
+x = -24
+z = 9
 y = param.Y_SEA + 1
 for _i in range(10):
     mc.setBlock(x, y, z,  param.DIAMOND_BLOCK)

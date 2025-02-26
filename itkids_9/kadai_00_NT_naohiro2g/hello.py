@@ -20,4 +20,4 @@ mc.postToChat("Hello, Minecraft Server!!")
 # axis_flat.clear_XYZ_axis(mc, wait=0)
 # axis_flat.draw_XYZ_axis(mc, wait=0.3)
 
-mc.setBlocks(0, 180, 0, 5, 200, 5, param.GOLD_BLOCK)
+mc.setBlocks(200, 0, 0, 200, 0, 0, param.GOLD_BLOCK)

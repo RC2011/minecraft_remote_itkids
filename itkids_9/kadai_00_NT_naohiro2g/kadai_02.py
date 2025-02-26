@@ -16,9 +16,9 @@ else:
 
 mc.postToChat('kadai #2  golden column')
 
-x, z = 5, 10
+x, z = -22, 9
 y = param.Y_SEA + 1
 for _i in range(10):
-    mc.setBlock(x, y, z,  param.GOLD_BLOCK)
+    mc.setBlock(x, y, z,  param.DIAMOND_BLOCK)
     sleep(0.25)
     y += 1

@@ -16,10 +16,10 @@ else:
 
 mc.postToChat('kadai #6  floor')
 
-x = -10
+x = -22
 y = param.Y_SEA + 1
 for _n in range(8):
-    z = 5
+    z = 9
     for _i in range(10):
         mc.setBlock(x, y, z,  param.SEA_LANTERN_BLOCK)
         sleep(0.25)

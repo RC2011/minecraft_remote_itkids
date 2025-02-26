@@ -4,15 +4,15 @@
 
 from mcje.vec3 import Vec3
 
-PLAYER_NAME = "PLAYER"  # player name in Minecraft
-PLAYER_ORIGIN = Vec3(5000, 0, 5000)  # po.x, po.y, po.z
+PLAYER_NAME = "Bananadaizin"  # player name in Minecraft
+PLAYER_ORIGIN = Vec3(200, 0, 0)  # po.x, po.y, po.z
 print(f"param_MCJE loaded for {PLAYER_NAME} at {PLAYER_ORIGIN.x}, {PLAYER_ORIGIN.y}, {PLAYER_ORIGIN.z}")
 
 # minecraft remote connection to the host at address:port
-ADRS_MCR = "localhost"
+ADRS_MCR = "c2cc.mydns.jp"
 # ADRS_MCR = "code2createclub.mydns.jp"
 # PORT_MCR = 14712  # mod
-PORT_MCR = 4711  # plugin server
+PORT_MCR = 25575  # plugin server
 
 
 # axis parameters

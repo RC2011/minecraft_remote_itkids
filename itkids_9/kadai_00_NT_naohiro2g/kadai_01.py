@@ -15,4 +15,6 @@ else:
 
 mc.postToChat('kadai #1  the first golden block')
 
-mc.setBlock(5, 70, 5,  param.GOLD_BLOCK)
+x, z = -10, 3
+y = param.Y_SEA + 18
+mc.setBlock(x, y, z,  param.GOLD_BLOCK)

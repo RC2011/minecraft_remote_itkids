@@ -30,10 +30,10 @@ sleep(2)
 mc.postToChat('kadai #7  stairs')
 sleep(1)
 
-z = -5
+z = 9
 y = param.Y_SEA + 1
 for _n in range(5):
-    x = -30
+    x = -26
     for _i in range(16):
         mc.setBlock(x, y, z,  param.GRASS_BLOCK)
         sleep(0.2)

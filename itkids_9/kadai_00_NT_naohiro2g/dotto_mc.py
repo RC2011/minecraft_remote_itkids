@@ -6,7 +6,7 @@ from param_MCJE import PLAYER_ORIGIN as po
 
 
 from lcd_font_mc import LCD_font as LCD_font_mc
-from dotto import LCD_font_styles
+from lcd_font_mc import LCD_font_styles
 
 from datetime import datetime
 

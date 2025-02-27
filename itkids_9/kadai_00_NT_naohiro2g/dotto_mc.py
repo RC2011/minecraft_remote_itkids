@@ -3,18 +3,15 @@ import sys
 from mcje.minecraft import Minecraft
 import param_MCJE as param
 from param_MCJE import PLAYER_ORIGIN as po
+
 from dotto import LCD_font
-from datetime import datetime
+from dotto import LCD_font_mc
 from dotto import LCD_font_styles
+
 from datetime import datetime
+
 import pygame
 from seven_seg_pg import Seven_seg
-from lcd_font_pg import LCD_font
-
-from lcd_font_mc import LCD_font as LCD_font_mc
-
-from mcje.minecraft import Minecraft
-import param_MCJE as param
 
 mc = Minecraft.create(address=param.ADRS_MCR, port=param.PORT_MCR)
 result = mc.setPlayer(param.PLAYER_NAME, po.x, po.y, po.z)
@@ -22,6 +19,7 @@ if ("Error" in result):
     sys.exit(result)
 else:
     print(result)
+mc.postToChat('hello')
 
 display2 = LCD_font(mc)
 display2.init_col(COLOR_ON=param.IRON_BLOCK, COLOR_OFF=param.AIR)

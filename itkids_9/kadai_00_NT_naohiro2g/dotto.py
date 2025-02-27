@@ -9,7 +9,13 @@ import param_MCJE as param
 from param_MCJE import PLAYER_ORIGIN as po
 
 mc = Minecraft.create(address=param.ADRS_MCR, port=param.PORT_MCR)
+result = mc.setPlayer(param.PLAYER_NAME, po.x, po.y, po.z)
+if ("Error" in result):
+    sys.exit(result)
+else:
+    print(result)
 
+mc.postToChat('hello') 
 
 LCD_0 = (0, 1, 1, 1, 0,
          1, 0, 0, 0, 1,

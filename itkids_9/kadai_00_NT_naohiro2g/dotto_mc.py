@@ -20,7 +20,6 @@ if ("Error" in result):
 else:
     print(result)
 
-
 display2 = LCD_font_mc(mc)
 display2.init_col(COLOR_ON=param.IRON_BLOCK, COLOR_OFF=param.AIR)
 display2.init_row(X_ORG=-35, Y_ORG=param.Y_SEA + 61, Z_ORG=-20, COL_INTV=6)
@@ -54,5 +53,3 @@ display3.update_col(col=4, code=dt_now.minute % 10)
 display3.update_col(col=5, code=11)
 display3.update_col(col=6, code=dt_now.second // 10)
 display3.update_col(col=7, code=dt_now.second % 10)
-
-mc.setBlock()

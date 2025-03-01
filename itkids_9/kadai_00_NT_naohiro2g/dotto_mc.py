@@ -10,8 +10,6 @@ from lcd_font_mc import LCD_font_styles
 
 from datetime import datetime
 
-import pygame
-from seven_seg_pg import Seven_seg
 
 mc = Minecraft.create(address=param.ADRS_MCR, port=param.PORT_MCR)
 result = mc.setPlayer(param.PLAYER_NAME, po.x, po.y, po.z)
